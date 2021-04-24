@@ -16,8 +16,8 @@ npm install --save
 firebase login
 firebase init
 # Select Hosting and Functions.
-firebase target:apply hosting admin-site YOUR-PROJECT-1
-firebase target:apply hosting user-site YOUR-PROJECT-2
+firebase target:apply hosting admin-site YOUR-PROJECT-Suffix1
+firebase target:apply hosting user-site YOUR-PROJECT-Suffix2
 firebase deploy
 ```
 
