@@ -1,0 +1,41 @@
+{
+  "hosting": [
+    {
+      "target": "user-site",
+      "public": "public_dummy",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "basicAuth"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "admin-site",
+      "public": "public_dummy",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "ipAuth"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ],
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
+    ],
+    "source": "functions"
+  }
+}

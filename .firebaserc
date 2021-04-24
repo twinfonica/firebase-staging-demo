@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "staging-demo-944f0"
+  },
+  "targets": {
+    "staging-demo-944f0": {
+      "hosting": {
+        "user-site": [
+          "staging-demo-944f0"
+        ],
+        "admin-site": [
+          "staging-demo-944f0-admin"
+        ]
+      }
+    }
+  }
+}
