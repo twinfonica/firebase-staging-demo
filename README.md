@@ -23,7 +23,7 @@ firebase deploy
 
 
 ## Notice
-Add user to execute functions on Google Cloud Functions.
+Add users to execute functions on Google Cloud Functions.
 
 More details:
 [Firebase functionsで 403 error Your client does not have permission to get URL from this server となった場合の解決策 - Qiita](https://qiita.com/toshiaki_takase/items/ce65cd5582a80917b52f)
